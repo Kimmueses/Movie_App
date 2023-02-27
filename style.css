@@ -1,18 +1,61 @@
 /* Importing google font */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
 
+/* Custom properties */
+:root {
+  --primary-color: #22254b;
+  --secondary-color: #373b69;
+
+}
 /* Setting universal selector to apply this to all the content */
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
+  background-color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
   margin: 0;
+}
+
+header {
+  background-color: var(--secondary-color);
+  padding: 1 rem;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+/* Styling search bar */
+.search {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  color: #fff;
+}
+
+.search::placeholder {
+  color: #7378c5;
+}
+
+.search:focus {
+  outline: none;
+  background-color: var(--primary-color);
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  color: #7378c5;
+}
+
+button:focus {
+  background-color: var(--primary-color);
 }

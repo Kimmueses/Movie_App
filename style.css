@@ -120,7 +120,7 @@ main {
   right: 0;
   max-height: 100%;
   transform: translateY(101%);
-  transition: transform 0.4s ease-in;
+  transition: transform 0.5s ease-in;
 }
 
 .movie:hover .overview {
